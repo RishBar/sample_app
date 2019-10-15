@@ -9,7 +9,7 @@ class ApplicationController < ActionController::Base
       
     def block_ip_addresses
         logger.debug "your ip address is #{current_ip_address}"
-        head :unauthorized if current_ip_address == "10.41.141.207"
+        head :unauthorized if current_ip_address == "162.156.172.219"
     end
       
     def current_ip_address
